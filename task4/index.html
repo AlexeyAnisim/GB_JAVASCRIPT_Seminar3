@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <script>
+
+        // Необходимо реализовать четыре функции, каждая функция должна принимать по два числа и 
+        // выполнять одну из операций (каждая функция выполняет одну из них): 1.Сложение; 2.Разность, 
+        // 3 Умножение, 4.Деление; Необходимо сделать так, чтобы функция вернула число, 
+        // например выражение console.log(sum(2,6)); должно вывести число 8 в консоль (sum - функция
+        // сложения в данном примере, ваши названия функций могут отличаться). Округлять значения, 
+        // которые возвращают функции не нужно, однако, обратите внимание на разность, функция 
+        // должна вычесть из большего числа меньшее, либо вернуть 0, если числа равны.    
+
+        const num1 = Number(prompt('Введите число num1'));
+        const num2 = Number(prompt('Введите число num2'));
+
+        function additionNumber(numA, numB) {
+            console.log(`Сумма двух чисел равна ${numA + numB}`)
+        }
+        function subtractionNumber(numA, numB) {
+            if (numA >= numB) {
+                console.log(`Разность двух чисел равна ${numA - numB}`)
+
+            } else {
+                console.log(`Разность двух чисел равна ${numB - numA}`)
+
+            }
+        }
+        function multiplicationNumber(numA, numB) {
+            console.log(`Произведение двух чисел равно ${numA * numB}`)
+        }
+        function divisionNumber(numA, numB) {
+            console.log(`Частное двух чисел равно ${numA / numB}`)
+        }
+        let numA = num1;
+        let numB = num2;
+        additionNumber(numA, numB);
+        subtractionNumber(numA, numB);
+        multiplicationNumber(numA, numB);
+        divisionNumber(numA, numB);
+
+    </script>
+</body>
